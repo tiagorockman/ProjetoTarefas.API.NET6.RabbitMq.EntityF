@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "3bc12bd6-4b12-4df1-859a-08adae275735",
+		"name": "TarefaAPI.NET6+RabbitMQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9053853"
+	},
+	"item": [
+		{
+			"name": "Create1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"descricao\": \"teste1\",\r\n  \"data\": \"2023-10-03T22:47:15Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7194/v1/tarefas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7194",
+					"path": [
+						"v1",
+						"tarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"descricao\": \"teste2\",\r\n  \"data\": \"2023-10-03T20:37:15Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7194/v1/tarefas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7194",
+					"path": [
+						"v1",
+						"tarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7194/v1/tarefas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7194",
+					"path": [
+						"v1",
+						"tarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7194/v1/tarefas/62ee8245-9276-412d-83a4-38b764d7ddaf",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7194",
+					"path": [
+						"v1",
+						"tarefas",
+						"62ee8245-9276-412d-83a4-38b764d7ddaf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Feitas Hoje",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7194/v1/tarefas/feitas-hoje",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7194",
+					"path": [
+						"v1",
+						"tarefas",
+						"feitas-hoje"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Não Feitas Hoje",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7194/v1/tarefas/nao-feitas-hoje",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7194",
+					"path": [
+						"v1",
+						"tarefas",
+						"nao-feitas-hoje"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Não Feitas Amanha",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7194/v1/tarefas/nao-feitas-amanha",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7194",
+					"path": [
+						"v1",
+						"tarefas",
+						"nao-feitas-amanha"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TarefaFeita",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"57be2d21-c35a-4461-8fb8-5dee73f5efe3\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7194/v1/tarefas/marcar-como-feito",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7194",
+					"path": [
+						"v1",
+						"tarefas",
+						"marcar-como-feito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tarefa Nao Feita",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"62ee8245-9276-412d-83a4-38b764d7ddaf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7194/v1/tarefas/marcar-como-nao-feito",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7194",
+					"path": [
+						"v1",
+						"tarefas",
+						"marcar-como-nao-feito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"descricao\": \"teste1 atualizada\",\r\n        \"data\": \"2023-10-03T22:47:15Z\",\r\n        \"status\": false,\r\n        \"id\": \"57be2d21-c35a-4461-8fb8-5dee73f5efe3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7194/v1/tarefas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7194",
+					"path": [
+						"v1",
+						"tarefas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

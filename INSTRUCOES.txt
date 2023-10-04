@@ -1,0 +1,8 @@
+Banco de dados pode ser utilizado o SQL local ou em memória conforme comentado no Tarefas.Api\Startup.cs
+
+Se não quiser rodar a migration pode utilizar o arquivo ScriptBD.sql (encontra-se na raiz do projeto) para criar a tabela no banco
+
+TarefaAPI.NET6+RabbitMQ.postman_collection.json (encontra -se na raiz do projeto), importar para o POSTMAN já vem com as rotas da API configurada para testes.
+
+As configurações do RabbitMQ e outras configurações estão no arquivo appsettings.
+O receiver/consumer já executa junto com a API.

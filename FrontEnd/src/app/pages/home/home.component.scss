@@ -1,0 +1,108 @@
+@import '../../scss/shared/colors';
+
+.conteiner{
+    width: 80%;
+    padding: 10px;
+    padding-left: 10%;
+}
+button {
+  z-index: 1;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24);
+  height: 30px;
+  padding: 7px;
+
+  &.primary {
+    background-color: $primary;
+    color: white;
+  }
+  &.accent {
+    background-color: $accent;
+    color: white;
+  }
+
+  &.warning {
+    background-color: $warning;
+    color: white;
+  }
+  
+  :disabled{
+    background-color: gray;
+    color: white;
+  }
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.full-width{
+    padding-top: 10%;
+    width: 100%;
+}
+
+.dateHourRange{
+    padding-top: -5%;
+}
+
+mat-form-field{
+    margin-right: 12px;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+    .margin {
+      margin: 5px;
+  }
+}
+
+
+
+.tableTitle
+{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .columnDesc{
+    width: 100vh;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+
+  th {
+    background-color: #f2f2f2;
+  }
+  
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+
+  tr.selected {
+    background-color: #64b5f6;
+    color: #ffffff;
+  }

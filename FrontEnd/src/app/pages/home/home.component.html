@@ -1,0 +1,68 @@
+<app-spinner *ngIf="IsWait"></app-spinner>
+<div class="conteiner">
+    <form [formGroup]="formulario">
+        <mat-form-field class="full-width">
+            <mat-label>Descricao</mat-label>
+            <input matInput placeholder="Descricao" name="descricao" formControlName="descricao">
+        </mat-form-field>
+        <mat-form-field class="dateHourRange">
+            <input
+            matInput
+            type="text"
+            placeholder="10/04/2023 23:55"
+            [mask]="dateRangeMask"
+            formControlName="data"
+            autocomplete="off"
+          />
+        </mat-form-field>
+        <section class="section">
+            <mat-checkbox class="margin button" [checked]="check" (change)="changeCheckStatus()">{{check== true? 'Concluída' : 'Não Concluída'}}</mat-checkbox>
+        </section>
+    
+        <section class="section">
+            <button class="margin button primary"  (click)="salvar()"  *ngIf="modoEditar" [disabled]="!formulario.valid"> Salvar </button>
+            <button class="margin warning"  (click)="cancelarEdicao()" *ngIf="modoEditar"> Cancelar </button>
+            <button class="margin button primary"  (click)="criarTarefa()" *ngIf="!modoEditar && formulario.valid"> Criar Nova Tarefa </button>
+        </section>
+
+        <section class="section">
+           
+            <button class="margin"  (click)="buscaTarefas('')"> Listar todas tarefas </button>
+            <button class="margin"  (click)="buscaTarefas('feitas-hoje')"> Listar Concluídas Hoje </button>
+            <button class="margin"  (click)="buscaTarefas('nao-feitas-hoje')"> Listar Não Concluídas Hoje </button>
+            <button class="margin"  (click)="buscaTarefas('nao-feitas-amanha')"> Listar Não Concluídas Amanhã </button>
+        </section>
+    </form>
+    <br/>
+    <section>
+        <div class="tableTitle"> LISTA DE TAREFAS</div>
+            <table>
+                <thead>
+                <tr>
+                    <th class="columnDesc">Descrição</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                    <th>Acão</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let tarefa of tarefas">
+                    <td>{{ tarefa.descricao }}</td>
+                    <td>{{ tarefa.data }}</td>
+                    <td>{{ tarefa.status == true? 'Concluída' : 'Não Concluída' }}</td>
+                    <td>
+                    <button class="accent"
+                        (click)="editarTarefa(tarefa)"
+                        mat-button> Editar
+                    </button>
+                    <button class="warning"
+                    (click)="deletarTarefa(tarefa)"
+                    mat-button> Deletar
+                </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+</div>
+

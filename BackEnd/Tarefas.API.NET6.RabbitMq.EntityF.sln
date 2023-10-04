@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarefas.Api", "Tarefas.Api\Tarefas.Api.csproj", "{46063BA2-A956-4272-BAC0-071F23985535}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarefas.Domain", "Tarefas.Domain\Tarefas.Domain.csproj", "{012D542F-59E9-4744-BA88-C3A14E444694}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarefas.Infra", "Tarefas.Infra\Tarefas.Infra.csproj", "{0C603FF9-6D4F-41DA-BE09-9AF63A7687E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarefas.Service", "Tarefas.Service\Tarefas.Service.csproj", "{7669C4C7-226A-49DE-AE8D-2024AFFE9E4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A3F6D7A-6D78-40FC-A89A-DAD43278DAC3}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		Tarefas.Infra\ScriptBD.sql = Tarefas.Infra\ScriptBD.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarefas.Shared", "Tarefas.Shared\Tarefas.Shared.csproj", "{E34300E1-4C6B-44A0-AA52-1CF21CF66409}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46063BA2-A956-4272-BAC0-071F23985535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46063BA2-A956-4272-BAC0-071F23985535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46063BA2-A956-4272-BAC0-071F23985535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46063BA2-A956-4272-BAC0-071F23985535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{012D542F-59E9-4744-BA88-C3A14E444694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012D542F-59E9-4744-BA88-C3A14E444694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012D542F-59E9-4744-BA88-C3A14E444694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012D542F-59E9-4744-BA88-C3A14E444694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C603FF9-6D4F-41DA-BE09-9AF63A7687E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C603FF9-6D4F-41DA-BE09-9AF63A7687E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C603FF9-6D4F-41DA-BE09-9AF63A7687E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C603FF9-6D4F-41DA-BE09-9AF63A7687E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7669C4C7-226A-49DE-AE8D-2024AFFE9E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7669C4C7-226A-49DE-AE8D-2024AFFE9E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7669C4C7-226A-49DE-AE8D-2024AFFE9E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7669C4C7-226A-49DE-AE8D-2024AFFE9E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E34300E1-4C6B-44A0-AA52-1CF21CF66409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E34300E1-4C6B-44A0-AA52-1CF21CF66409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E34300E1-4C6B-44A0-AA52-1CF21CF66409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E34300E1-4C6B-44A0-AA52-1CF21CF66409}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA15D2F7-0520-4ECB-9BDD-16E1FC317873}
+	EndGlobalSection
+EndGlobal
