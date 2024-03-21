@@ -17,11 +17,12 @@ you can use **Window Package Manager Console**.
 
 * Instalação Package
 
-     ```
+```
        dotnet tool install --global dotnet-ef
      
        # Select Default Project Tarefas.Infra (Criar Migrações) - It has worked also by command line (PowerShell)
-       dotnet ef migrations add InitialCreate  --startup-project ..\Tarefas.Api\ 
+       dotnet ef migrations add InitialCreate  --startup-project ..\Tarefas.Api\
+
        dotnet ef database update --startup-project ..\Tarefas.Api\
-      ```
+```
 ![UserSeach](https://github.com/tiagorockman/ProjetoTarefas.API.NET6.RabbitMq.EntityF/blob/main/arquivosExtras/tela.png)
